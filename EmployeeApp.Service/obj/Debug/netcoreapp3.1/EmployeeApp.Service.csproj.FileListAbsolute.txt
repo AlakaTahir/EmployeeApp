@@ -1,0 +1,15 @@
+C:\Users\HP\Desktop\Practice\EmployeeApp\EmployeeApp.Service\bin\Debug\netcoreapp3.1\EmployeeApp.Service.deps.json
+C:\Users\HP\Desktop\Practice\EmployeeApp\EmployeeApp.Service\bin\Debug\netcoreapp3.1\EmployeeApp.Service.dll
+C:\Users\HP\Desktop\Practice\EmployeeApp\EmployeeApp.Service\bin\Debug\netcoreapp3.1\EmployeeApp.Service.pdb
+C:\Users\HP\Desktop\Practice\EmployeeApp\EmployeeApp.Service\bin\Debug\netcoreapp3.1\EmployeeApp.Model.dll
+C:\Users\HP\Desktop\Practice\EmployeeApp\EmployeeApp.Service\bin\Debug\netcoreapp3.1\EmployeeInformation.Migration.dll
+C:\Users\HP\Desktop\Practice\EmployeeApp\EmployeeApp.Service\bin\Debug\netcoreapp3.1\EmployeeApp.Model.pdb
+C:\Users\HP\Desktop\Practice\EmployeeApp\EmployeeApp.Service\bin\Debug\netcoreapp3.1\EmployeeInformation.Migration.pdb
+C:\Users\HP\Desktop\Practice\EmployeeApp\EmployeeApp.Service\obj\Debug\netcoreapp3.1\EmployeeApp.Service.csproj.AssemblyReference.cache
+C:\Users\HP\Desktop\Practice\EmployeeApp\EmployeeApp.Service\obj\Debug\netcoreapp3.1\EmployeeApp.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\Desktop\Practice\EmployeeApp\EmployeeApp.Service\obj\Debug\netcoreapp3.1\EmployeeApp.Service.AssemblyInfoInputs.cache
+C:\Users\HP\Desktop\Practice\EmployeeApp\EmployeeApp.Service\obj\Debug\netcoreapp3.1\EmployeeApp.Service.AssemblyInfo.cs
+C:\Users\HP\Desktop\Practice\EmployeeApp\EmployeeApp.Service\obj\Debug\netcoreapp3.1\EmployeeApp.Service.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\Practice\EmployeeApp\EmployeeApp.Service\obj\Debug\netcoreapp3.1\EmployeeApp.Service.csproj.CopyComplete
+C:\Users\HP\Desktop\Practice\EmployeeApp\EmployeeApp.Service\obj\Debug\netcoreapp3.1\EmployeeApp.Service.dll
+C:\Users\HP\Desktop\Practice\EmployeeApp\EmployeeApp.Service\obj\Debug\netcoreapp3.1\EmployeeApp.Service.pdb

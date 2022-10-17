@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EmployeeApp.Model\EmployeeApp.Model.csproj" />
+    <ProjectReference Include="..\EmployeeInformation.Migration\EmployeeInformation.Migration.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,10 @@
+C:\Users\HP\Desktop\Practice\EmployeeApp\EmployeeApp.Model\bin\Debug\netcoreapp3.1\EmployeeApp.Model.deps.json
+C:\Users\HP\Desktop\Practice\EmployeeApp\EmployeeApp.Model\bin\Debug\netcoreapp3.1\EmployeeApp.Model.dll
+C:\Users\HP\Desktop\Practice\EmployeeApp\EmployeeApp.Model\bin\Debug\netcoreapp3.1\EmployeeApp.Model.pdb
+C:\Users\HP\Desktop\Practice\EmployeeApp\EmployeeApp.Model\obj\Debug\netcoreapp3.1\EmployeeApp.Model.csproj.AssemblyReference.cache
+C:\Users\HP\Desktop\Practice\EmployeeApp\EmployeeApp.Model\obj\Debug\netcoreapp3.1\EmployeeApp.Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\Desktop\Practice\EmployeeApp\EmployeeApp.Model\obj\Debug\netcoreapp3.1\EmployeeApp.Model.AssemblyInfoInputs.cache
+C:\Users\HP\Desktop\Practice\EmployeeApp\EmployeeApp.Model\obj\Debug\netcoreapp3.1\EmployeeApp.Model.AssemblyInfo.cs
+C:\Users\HP\Desktop\Practice\EmployeeApp\EmployeeApp.Model\obj\Debug\netcoreapp3.1\EmployeeApp.Model.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\Practice\EmployeeApp\EmployeeApp.Model\obj\Debug\netcoreapp3.1\EmployeeApp.Model.dll
+C:\Users\HP\Desktop\Practice\EmployeeApp\EmployeeApp.Model\obj\Debug\netcoreapp3.1\EmployeeApp.Model.pdb
