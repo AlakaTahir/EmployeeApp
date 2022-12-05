@@ -7,6 +7,12 @@ namespace EmployeeApp.Service.Interfaces
 {
     public interface IEmployeeInformationService
     {
-        EmployeeInformationResponseViewModel CreateProfile(EmployeeInformationRequestModel model);
+        BaseResponseViewModel CreateProfile(EmployeeInformationRequestModel model);
+
+        EmployeeInformationResponseViewModel GetProfileByMail(string emailAddress);
+
+        BaseResponseViewModel DeleteProfile(Guid id);
+
+        BaseResponseViewModel UpdateProfile(Guid id, EmployeeInformationRequestModel model);
     }
 }

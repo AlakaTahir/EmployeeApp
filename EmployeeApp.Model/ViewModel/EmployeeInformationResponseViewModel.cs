@@ -6,7 +6,12 @@ namespace EmployeeApp.Model.ViewModel
 {
     public class EmployeeInformationResponseViewModel
     {
-     public bool Status { get; set; }
-     public string Message { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public DateTime DateofBirth { get; set; }
+        public string StateofOrigin { get; set; }
+        public string Gender { get; set; }
+        public string PhoneNumber { get; set; }
+        public string Email { get; set; }
     }
 }
