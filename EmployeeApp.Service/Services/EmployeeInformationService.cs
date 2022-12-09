@@ -1,4 +1,5 @@
-﻿using EmployeeApp.Model.Entity;
+﻿using Arch.EntityFrameworkCore.UnitOfWork;
+using EmployeeApp.Model.Entity;
 using EmployeeApp.Model.ViewModel;
 using EmployeeApp.Service.Interfaces;
 using EmployeeInformation.Migrations;
@@ -11,19 +12,19 @@ namespace EmployeeApp.Service.Services
 {
     public class EmployeeInformationService : IEmployeeInformationService
     {
-        private readonly EmployeeInformationDataBaseContext _context;
+        private readonly IUnitOfWork _unitOfWork;
 
-        public EmployeeInformationService(EmployeeInformationDataBaseContext context)
+        public EmployeeInformationService(IUnitOfWork unitOfWork)
         {
-            _context = context;
+            _unitOfWork = unitOfWork;
         }
 
         public BaseResponseViewModel CreateProfile(EmployeeInformationRequestModel model)
         {
             //Find if email already exist on the database
-            var profile = _context.EmployeeInfos.FirstOrDefault(x => x.Email == model.Email);
+            var profile = _unitOfWork.GetRepository<EmployeeInfo>().GetFirstOrDefault(predicate: x => x.Email == model.Email);
 
-            if(profile == null)
+            if (profile == null)
             {
                 var info = new EmployeeInfo();
                 info.Id = Guid.NewGuid();
@@ -35,8 +36,8 @@ namespace EmployeeApp.Service.Services
                 info.PhoneNumber = 0; // There is a mistake here
                 info.StateofOrigin = model.StateofOrigin;
 
-                _context.EmployeeInfos.Add(info);
-                _context.SaveChanges();
+                _unitOfWork.GetRepository<EmployeeInfo>().Insert(info);
+                _unitOfWork.SaveChanges();
 
                 return new BaseResponseViewModel
                 {
@@ -59,8 +60,8 @@ namespace EmployeeApp.Service.Services
 
         public EmployeeInformationResponseViewModel GetProfileByMail(string emailAddress)
         {
-            var profile = _context.EmployeeInfos.FirstOrDefault(x => x.Email == emailAddress);
-            if(profile != null)
+            var profile = _unitOfWork.GetRepository<EmployeeInfo>().GetFirstOrDefault(predicate: x => x.Email == emailAddress);
+            if (profile != null)
             {
                 return new EmployeeInformationResponseViewModel
                 {
@@ -82,13 +83,13 @@ namespace EmployeeApp.Service.Services
         public BaseResponseViewModel DeleteProfile(Guid id)
         {
             //Find if record exist
-            var profile = _context.EmployeeInfos.FirstOrDefault(x => x.Id == id);
+            var profile = _unitOfWork.GetRepository<EmployeeInfo>().GetFirstOrDefault(predicate: x => x.Id == id);
 
             //if record exist
-            if(profile != null)
+            if (profile != null)
             {
-                _context.EmployeeInfos.Remove(profile);
-                _context.SaveChanges();
+                _unitOfWork.GetRepository<EmployeeInfo>().Delete(profile);
+                _unitOfWork.SaveChanges();
 
                 return new BaseResponseViewModel
                 {
@@ -110,7 +111,7 @@ namespace EmployeeApp.Service.Services
         public BaseResponseViewModel UpdateProfile(Guid id, EmployeeInformationRequestModel model)
         {
             //Find if record exist
-            var profile = _context.EmployeeInfos.FirstOrDefault(x => x.Id == id);
+            var profile = _unitOfWork.GetRepository<EmployeeInfo>().GetFirstOrDefault(predicate: x => x.Id == id);
 
 
             //if record exist
@@ -123,8 +124,8 @@ namespace EmployeeApp.Service.Services
                 profile.DateofBirth = model.DateofBirth;
                 profile.Gender = model.Gender;
 
-                _context.EmployeeInfos.Update(profile);
-                _context.SaveChanges();
+                _unitOfWork.GetRepository<EmployeeInfo>().Update(profile);
+                _unitOfWork.SaveChanges();
 
                 return new BaseResponseViewModel
                 {

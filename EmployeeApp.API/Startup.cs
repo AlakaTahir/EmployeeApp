@@ -15,6 +15,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.OpenApi.Models;
+using Arch.EntityFrameworkCore.UnitOfWork;
 
 namespace EmployeeApp.API
 {
@@ -31,7 +32,7 @@ namespace EmployeeApp.API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddDbContext<EmployeeInformationDataBaseContext> (options => options.UseMySql(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddDbContext<EmployeeInformationDataBaseContext> (options => options.UseMySql(Configuration.GetConnectionString("DefaultConnection"))).AddUnitOfWork<EmployeeInformationDataBaseContext>(); ;
             services.AddTransient<IEmployeeInformationService, EmployeeInformationService>();
             services.AddSwaggerGen(c =>
             {
